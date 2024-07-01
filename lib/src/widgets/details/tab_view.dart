@@ -5,13 +5,13 @@ class MyTabView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const DefaultTabController(
+    return DefaultTabController(
       length: 2,
       child: TabBar(
-        dividerColor: Colors.transparent,
+        dividerColor: Theme.of(context).colorScheme.surface,
         isScrollable: true,
         tabAlignment: TabAlignment.start,
-        tabs: [
+        tabs: const [
           Tab(text: "OVERVIEW"),
           Tab(text: "REVIEWS"),
         ],

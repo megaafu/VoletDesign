@@ -56,6 +56,7 @@ class _DetailsPageState extends State<DetailsPage> {
           ),
           Flexible(
             child: Container(
+              color: const Color(0xffF5F7F9),
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: OverView(practitioner: widget.practitioner),
             ),

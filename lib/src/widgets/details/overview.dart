@@ -41,7 +41,7 @@ class OverView extends StatelessWidget {
         ),
         const SizedBox(height: 22),
         ClipRRect(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(12),
           child: Image.asset("assets/about.png"),
         ),
         const SizedBox(height: 16),
