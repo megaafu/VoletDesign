@@ -19,7 +19,7 @@ class MyCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             _leading(),
-            const SizedBox(width: 16),
+            const SizedBox(width: 10),
             _title(context),
             const Spacer(),
             MediaQuery.of(context).size.width > 374
@@ -33,8 +33,8 @@ class MyCard extends StatelessWidget {
 
   SizedBox _leading() {
     return SizedBox(
-      height: 80,
-      width: 80,
+      height: 72,
+      width: 72,
       child: Stack(
         clipBehavior: Clip.none,
         fit: StackFit.expand,

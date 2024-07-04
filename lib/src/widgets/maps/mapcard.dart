@@ -17,7 +17,7 @@ class MapCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset("assets/hospital.png"),
-              const SizedBox(width: 16),
+              const SizedBox(width: 10),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
