@@ -40,9 +40,12 @@ class _MapsVoletState extends State<MapsVolet> {
               ),
             },
           ),
-          const Align(
-            alignment: Alignment.bottomCenter,
-            child: MapCard(),
+          const Padding(
+            padding: EdgeInsets.only(bottom: 20.0),
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child: MapCard(),
+            ),
           ),
         ],
       ),

@@ -22,7 +22,7 @@ class MyCard extends StatelessWidget {
             const SizedBox(width: 10),
             _title(context),
             const Spacer(),
-            MediaQuery.of(context).size.width > 374
+            MediaQuery.of(context).size.width > 400
                 ? _trailing(context)
                 : Container(),
           ],

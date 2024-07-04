@@ -9,6 +9,8 @@ class HomeAppBar extends StatelessWidget implements PreferredSize {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      centerTitle: false,
+      leadingWidth: 0,
       elevation: 0,
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg_icons/flutter_svg_icons.dart';
 
+var ellipses = [
+  "assets/ellipse1.png",
+  "assets/ellipse2.png",
+  "assets/ellipse3.png",
+  "assets/ellipse4.png",
+];
+
 class MapCard extends StatelessWidget {
   const MapCard({
     super.key,
@@ -9,7 +16,7 @@ class MapCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: const Color(0xFFDDE1E6),
+      color: Colors.white,
       child: IntrinsicHeight(
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
@@ -17,7 +24,7 @@ class MapCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset("assets/hospital.png"),
-              const SizedBox(width: 10),
+              const SizedBox(width: 8),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +47,7 @@ class MapCard extends StatelessWidget {
                             icon: SvgIconData('assets/icons/star.svg'),
                           ),
                         ),
-                        const WidgetSpan(child: SizedBox(width: 6)),
+                        const WidgetSpan(child: SizedBox(width: 4)),
                         TextSpan(
                           text: "4.9 based on 100 ratings",
                           style: Theme.of(context).textTheme.bodySmall,
@@ -54,6 +61,22 @@ class MapCard extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodySmall,
                   )
                 ],
+              ),
+              Expanded(
+                child: Stack(
+                  children: List.generate(
+                    4,
+                    (index) {
+                      return Positioned(
+                        top: 20,
+                        left: index * 24,
+                        child: CircleAvatar(
+                          child: Image.asset(ellipses[index]),
+                        ),
+                      );
+                    },
+                  ),
+                ),
               ),
             ],
           ),
